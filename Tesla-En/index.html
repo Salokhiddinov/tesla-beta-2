@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/b/bb/Tesla_T_symbol.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TESLA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded');
+        }
+    </script>
+
+    <script>
+            window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+            }
+    </script>
+
+
+    <section>
+    
+
+    <nav>
+        <ul>
+        <li><a href="model-config/model-plaid/index.html" class="model-plaid">Model S Plaid</a></li>
+        <li><a href="model-config/model-3/index.html" class="model-3">Model 3</a></li>
+        <li><a href="model-config/model-x/index.html" class="model-x">Model X</a></li>
+        <li><a href="model-config/model-y/index.html" class="model-y">Model Y</a></li>
+        </ul>
+    </nav>
+    
+    <div class="logo-img">
+        <img src="img/logo.png" alt="logo" class="logo" width="40%" >
+    </div>
+    <p class="logo-text">Tesla In Uzbekistan</p>
+    
+
+    <button class="configure"><a href="model-config/model-choose.html">More Info</a></button>
+
+</section>
+
+    <h2 id="cars">Our Models</h2>
+
+<div class="cars">
+
+    <div class="tesla--model">
+        <div class="about--car">
+            <h3 class="model-name--1">Tesla Model S PLaid</h3>
+            <h3 class="model-name--2 hidden">Tesla Model 3</h3>
+            <h3 class="model-name--3 hidden">Tesla Model X</h3>
+            <h3 class="model-name--4 hidden">Tesla Model Y</h3>
+            
+            <p class="model-about--1">With the longest range and quickest acceleration of any electric vehicle in production, Model S Plaid is the highest performing sedan ever built. Both Long Range and Plaid powertrains, with updated battery architecture, are capable of back-to-back, consistent 1/4 mile runs.</p>
+            <p class="model-about--2 hidden">Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.</p>
+            <p class="model-about--3 hidden">With the most power and quickest acceleration of any SUV, Model X Plaid is the highest performing SUV ever built. Both Long Range and Plaid powertrains, with updated battery architecture, can deliver instant torque at any speed.</p>
+            <p class="model-about--4 hidden">Model Y provides maximum versatility—able to carry 7 passengers and their cargo. Each second row seat folds flat independently, creating flexible storage for skis, furniture, luggage and more. The liftgate opens to a low trunk floor that makes loading and unloading easy and quick.</p>
+
+            
+            <button class="configure-left"><a href="model-config/model-choose.html">View in model selection</a></button>
+            
+        </div>
+        <div class="car--image">
+            <img src="img-models/1.png" alt="model" id="gallery-cars" class="gallery-cars--1">
+            <img src="img-models/2.png" alt="model" id="gallery-cars" class="gallery-cars--2 hidden">
+            <img src="img-models/3.png" alt="model" id="gallery-cars" class="gallery-cars--3 hidden">
+            <img src="img-models/4.png" alt="model" id="gallery-cars" class="gallery-cars--4 hidden">
+            
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="gallery-controller">
+        <img src="img/arrow-left.png" class="left-arrow" width="30px" height="20px">
+        <strong><p class="gallery-num">1</p></strong>
+        <img src="img/arrow-right.png" class="right-arrow" width="30px" height="20px">
+
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

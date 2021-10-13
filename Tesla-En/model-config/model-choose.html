@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/b/bb/Tesla_T_symbol.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /><link rel="stylesheet" href="model-choose-style.css">
+    <title>Model Selection</title>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded');
+        }
+    </script>
+
+    <script>
+            window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+            }
+    </script>
+
+
+
+    <header>
+        <img src="img-selector/logo.png" alt="Logo">
+    </header>
+    <section>
+        <div class="model_line-1">
+            <div class="model plaid">
+                <h2>Model S PLaid</h2>
+                <p>Starting from $89,990*</p>
+                <a href="model-plaid/index.html">Configure the model</a>
+                <img src="img-selector/1.png" alt="model">
+            </div>
+            <div class="model model3">
+                <h2>Model 3</h2>
+                <p>Starting from $41,990</p>
+                <a href="model-3/index.html">Configure the model</a>
+                <img src="img-selector/2.png" alt="model">
+            </div>
+
+            
+        </div>
+    
+            <p class="more animate__animated animate__bounce">Scroll to see more</p>
+        
+            <script>
+                // All animations will take twice the time to accomplish
+                document.documentElement.style.setProperty('--animate-duration', '2s');
+
+                // All animations will take half the time to accomplish
+                document.documentElement.style.setProperty('--animate-duration', '.5s');
+            </script>
+        
+
+        <div class="model_line-2">
+            <div class="model modelX">
+                <h2>Model X</h2>
+                <p>Starting from $99,990</p>
+                <a href="model-x/index.html">Configure the model</a>
+                <img src="img-selector/3.png" alt="model">
+            </div>
+            <div class="model modelY">
+                <h2>Model Y</h2>
+                <p>Starting from $54,990</p>
+                <a href="model-y/index.html">Configure the model</a>
+                <img src="img-selector/4.png" alt="model">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>This is the non-oficial informative website of Tesla Inc. <br>
+         All the information is taken from the official website <a href="tesla.com">www.tesla.com</a><br>
+        There may be some inaccuracy in a data. The side is considered as fan website and the content will be deleted if asked</p>
+    </footer>
+</body>
+</html>

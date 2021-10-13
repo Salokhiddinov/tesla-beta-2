@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin:auto;
+    text-align: center;
+    
+    
+    
+}
+
+.model p{
+  padding: 2vh 0;
+}
+
+/* Pre-Loader */
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+
+/* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+
+
+
+
+header img{
+    width: 40vh;
+    padding: 5vh 0;
+}
+
+.model h2 , .model p, .model a {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.model a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(63, 63, 63, 0.795);
+    padding: 1vh 2vh;
+    border-radius: 5vh;
+    
+  }
+  
+  .model a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(199, 199, 199, 0.637);
+    padding: 1vh 2vh;
+    border-radius: 5vh;
+    font-size: 1.2rem;
+    transform: scale(1.2);
+
+}
+
+
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
+
+  :root {
+    --animate-duration: 2s;
+  }
+  
+  /* Only this element will take half the time to finish */
+  .my-element {
+    --animate-duration: 0.5s;
+  }
+
+  .my-element {
+    --animate-repeat: 2;
+  }
+
+  .more {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+
+  footer {
+    background-color: azure;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: rgb(80, 80, 80);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10vh;
+}
+
+footer a {
+    color: #000;
+}
+
+
+
+
+
+
+/* For desktops 1200px >= */
+@media screen and (min-width: 1200px) {
+    .model img{
+        width: 65vh;
+        padding: 5vh 0;
+    }
+
+    section {
+        width: 70%;
+        margin: auto;
+    }
+
+    .model_line-1, .model_line-2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10vh 0;
+    }
+
+    .more {
+      display: block;
+    }
+
+    
+}
+
+/* @media screen and (min-width: 1200px) {
+    .model img{
+        width: 55vh;
+        padding: 5vh 0;
+    }
+
+    section {
+        width: 70%;
+        margin: auto;
+    }
+
+    .model_line-1, .model_line-2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 10vh 0;
+    }
+    .more {
+      display:block;
+    }
+    
+} */
+
+@media screen and (min-width: 601px) {
+    .model img{
+        width: 55vh;
+        padding: 10vh 0;
+    }
+    section {
+        width: 70%;
+        margin: auto;
+    }
+
+    .model  {
+        margin-bottom: 10vh;
+    }
+    .more {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .model img{
+        width: 55vh;
+        padding: 10vh 0;
+    }
+    section {
+        width: 80%;
+        margin: auto;
+    }
+
+    .model  {
+        margin-bottom: 10vh;
+    }
+    .more {
+        display: none;
+    }
+}

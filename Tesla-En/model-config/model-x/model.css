@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+header {
+    margin:auto;
+    text-align: center;
+     
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header img{
+    width: 30vh;
+}
+.header {
+    margin: auto;
+    text-align: center;
+}
+
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.config-1 {
+    width: 55vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    border-style: solid;
+    
+    border-radius: 5vh;
+    margin: 5vh 0;
+    background-color: white;
+
+}
+
+.config-2 {
+    width: 55vh;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    border-style: solid;
+    
+    border-radius: 5vh;
+    margin: 5vh 0;
+    background-color: white;
+
+}
+
+
+.config h3 {
+    font-size: 1.2rem;
+}
+
+.config p {
+    display: inline-block;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  padding-top: 2vh;
+}
+
+.uzb-cost {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+    margin:auto;
+    padding: 18vh 0;
+
+
+}
+
+.uzb-cost h3 {
+    font-size: 1.9rem;
+}
+
+.uzb-reg, .note {
+    color: rgb(73, 73, 73);
+} 
+
+.price-uzb {
+    font-size: 2rem;
+    color: brown;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+button {
+    padding: 1vh 2vh;
+    text-decoration: none;
+    border-radius: 5vh;
+    border-style: none;
+    transition: ease-in-out .2s;
+    background-color: rgba(46, 46, 46, 0.644);
+    margin: 0 2vh;
+}
+
+button:hover {
+    transform: scale(1.5);
+}
+
+.buttons {
+    margin: auto;
+    display: flex;
+    width: 50%;
+    padding: 10vh;
+    justify-content: space-around;
+}
+
+
+
+@media screen and (min-width: 1201px) {
+
+    
+    section {
+        margin: auto;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10vh 0;
+    
+    }
+    
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        padding: 5vh;
+    }
+
+    .model-img img{
+       
+        display: block;
+        margin: auto;
+        margin: auto;
+        width: 90%;
+    }
+    
+    .uzb-cost {
+        width: 50%;
+    }
+}
+
+footer {
+    background-color: azure;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: rgb(80, 80, 80);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10vh;
+}
+
+footer a {
+    color: #000;
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px){
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding: 5vh 0;
+    }
+
+    .model-img {
+        margin: auto;
+    }
+
+    section {
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+       
+    
+    }
+
+    .configurator {
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding: 5vh 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    .configurator {
+       width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+

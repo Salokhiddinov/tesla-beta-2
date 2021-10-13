@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+section {
+    background-image: url("img/all.webp");
+    background-size: cover;
+    height: 100vh;
+}
+/* Pre-Loader */
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+
+/* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #e0e0e0;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #337ab7;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+.logo, nav, .logo-text{animation:scale-up-center .4s cubic-bezier(.39,.575,.565,1.000) both}
+
+
+nav {
+    width: 75%;
+    margin: auto;
+    padding-top: 30px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+    
+}
+
+.hidden {
+    display: none;
+}
+
+li {
+    color: #FFF;
+    transition: all .15s ease-in-out;
+}
+
+li:hover {
+    color: black;
+    padding: 5px 13px;
+    border-radius: 2vh;
+    background-color: rgba(36, 36, 36, 0.404);
+    transform: scale(1.05);
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.configure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    background-color: rgba(177, 177, 177, 0.603);
+    color: rgb(70, 70, 70);
+    transition: all .15s ease-in-out;
+    border-radius: 3vh;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+}
+
+.configure:hover {
+    background-color: rgba(0, 0, 0, 0.411);
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(80, 80, 80);
+    font-size: 3rem;
+    padding-top: 10vh;
+    
+    
+}
+
+
+.cars {
+    width: 75%;
+    margin: auto;
+}
+
+.tesla--model {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px;
+    
+}
+
+.about--car h3 {
+    
+    font-size: 2rem;
+}
+
+#gallery-cars {
+    height: 40vh;
+    text-align:center;
+}
+
+.configure-left {
+    display: block;   
+    margin-top: 35px;
+    background-color: rgba(177, 177, 177, 0.603);
+    color: rgb(70, 70, 70);
+    transition: all .15s ease-in-out;
+    border-radius: 19px;
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+}
+
+.configure-left:hover {
+    background-color: rgba(0, 0, 0, 0.411);
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+.gallery-controller {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    margin: auto;
+    padding-top: 30px;
+
+}
+
+.gallery-controller p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 15vh;
+}
+
+.gallery-controller img {
+    padding-top: 20px;
+}
+
+.configure a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.configure-left a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+
+
+footer {
+    background-color: azure;
+    
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: rgb(80, 80, 80);
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer a {
+    color: #000;
+}
+
+
+#specs {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+}
+
+.range h4 {
+    font-size: 2rem;
+}
+
+#hidden {
+    display:none;
+}
+
+
+
+/* For mobile displays with max-width of 500px */
+
+@media all and (max-width: 600px) {
+    section {
+        background-image: url("img/vert.webp");
+        width: 100%;
+        background-size: cover;
+        
+    }
+
+    nav {
+        width: 85%;
+        margin: auto;
+        padding-top: 30px;
+        
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 0.7rem;;
+    }
+    
+    ul {
+        text-align: center;
+        list-style-type: none;
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    
+        
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .tesla--model {
+        display: block;
+    }
+
+    .car--image {
+        min-width: 100px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 5vh;
+    }
+
+    .about--car h3 {
+        font-size: 1.4rem;
+    }
+
+    #gallery-cars {
+        height: 23vh;
+    }
+    
+    
+  }
+
+
+
+
+  @media (min-width: 601px) and (max-width: 900px)  {
+    
+    #gallery-cars {
+        height: 23vh;
+        text-align:center;
+    }
+
+    section {
+        background-image: url("img/tablet.webp");
+        width: 100%;
+        background-size: cover;
+        
+    }
+
+    .tesla--model {
+        display: block;
+    }
+
+    .logo-text {
+        color: #FFF;
+    }
+
+    .logo {
+        min-width: 50vh;
+        max-width: 80vh;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1500px) {
+    #gallery-cars {
+        max-height: 25vh;
+    }
+}
